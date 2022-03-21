@@ -1,0 +1,6 @@
+Process[] processesByName = Process.GetProcessesByName("RobloxPlayerBeta");
+for (int i = 0; i < processesByName.Length; i++)
+{
+Process process = processesByName[i];
+process.Kill();
+}
